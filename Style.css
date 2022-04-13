@@ -78,12 +78,12 @@ nav ul li a{
 }
 #menuBtn{
 	width: 50px;
-	height: 50px;
-	background: #000;
+	height: 0;
+	background: #fff;
 	text-align: center;
 	position: fixed;
 	right: 30px;
-	top: 20px;
+	top: 30px;
 	border-radius: 3px;
 	z-index: 3;
 	cursor: pointer;
@@ -199,7 +199,7 @@ nav ul li a{
 #service{
 	width: 100%;
 	padding: 70px 0;
-	background: #efefef;
+	background: #747880;
 }
 .service-box{
 	width: 80%;
@@ -219,3 +219,101 @@ nav ul li a{
 	width: 100%;
 	border-radius: 7px;
 }
+.service-desc hr{
+	background: #000;
+	height: 2px;
+	border: 0;
+	margin: 10px auto;
+	width: 100%;
+}
+.service-desc p{
+	font-size: 20px;
+}
+@media screen and (max-width: 770px){
+	.simgle-service{
+		flex-basis: 100%;
+		margin-bottom: 30px;
+	}
+	.service-desc p{
+		font-size: 15px;
+	}
+	hr{
+		margin: 5px auto;
+	}
+}
+
+/*--footer--*/
+
+#footer{
+	padding: 100px 0 20px;
+	background: #efefef;
+}
+.footer-row{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-left,{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.footer-right{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+.footer-row h1{
+	margin: 10px 0;
+}
+.footer-row p{
+	line-height: 35px;
+}
+.footer-left .fa{
+	font-size: 20px;
+	color: #009688;
+	margin: 10px;
+}
+.footer-right .fa{
+	font-size: 20px;
+	color: #009688;
+	margin: 10px;
+}
+.social-links{
+	text-align: center;
+}
+.social-links .fa{
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	border: 1px solid #009688;
+	line-height: 40px;
+	margin: 40px 5px 0;
+	color: #009688;
+	cursor: pointer;
+	transition: .5s;
+}
+.social-links .fa:hover{
+	background: #009688;
+	color: #fff;
+	transform: translateY(7px);
+}
+.social-links p{
+	font-size: 12px;
+	margin-top: 20px;
+}
+@media screen and (max-width: 770px){
+	.footer-left{
+		flex-basis: 100%;
+		font-size: 14px;
+	}
+	.footer-right{
+		flex-basis: 100%;
+		font-size: 14px;
+	}
+}
+
